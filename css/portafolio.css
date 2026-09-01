@@ -117,20 +117,18 @@ h2 { font-size: 1.8rem; margin-top: 4px; }
 .proyectos-grid { display: flex; flex-wrap: wrap; gap: 28px; margin-top: 30px; }
 
 .proyecto-card {
-  background-color: white;
-  border: 1px solid #eee;
+    -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
   border-radius: 14px;
-  overflow: hidden;
-  width: 320px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
-  padding-bottom: 20px;
-  display: flex;
-  flex-direction: column;
 }
 
 .proyecto-card figure { margin: 0; }
 .proyecto-card img { width: 100%; display: block; }
 .proyecto-card figcaption { font-size: 0.8rem; color: var(--gris); padding: 8px 20px 0; }
+.proyecto-card h3::before{
+  content: " > ";
+ }
 .proyecto-card h3 { padding: 12px 20px 0; margin: 0; color: var(--morado); }
 .proyecto-card p { padding: 0 20px; }
 
